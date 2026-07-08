@@ -1,0 +1,49 @@
+// ==========================================================
+// Power Query M Script
+// Supply Chain Visibility & Optimization - Milestone 1
+// ==========================================================
+
+// Main Power Query transformations performed:
+
+1. Imported the Supply Chain dataset from CSV.
+
+2. Renamed the main query to:
+   Fact_table
+
+3. Removed unnecessary columns:
+   - Customer Email
+   - Customer Password
+   - Order Zipcode
+
+4. Created reference tables:
+   - Dim_Customer
+   - Dim_Product
+   - Dim_Category
+   - Dim_Shipping
+   - Dim_Location
+   - Dim_Department
+
+5. For each dimension table:
+   - Selected only the required columns.
+   - Removed duplicate records using the primary key.
+
+6. Added an Index column in Dim_Location
+   and renamed it as Location_id.
+
+7. Merged Dim_Location with Fact_table
+   using:
+   - Market
+   - Order City
+   - Order Country
+   - Order Region
+   - Order State
+
+8. Expanded only the Location_id column
+   into Fact_table.
+
+9. Applied all transformations using
+   Close & Apply.
+
+10. Created Dim_Date separately and
+    established relationships between
+    fact and dimension tables.
