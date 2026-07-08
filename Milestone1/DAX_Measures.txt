@@ -1,0 +1,61 @@
+// =======================================================
+// DAX Measures - Supply Chain Visibility & Optimization
+// =======================================================
+
+// Total Sales
+Total Sales =
+SUM(Fact_table[Sales])
+
+// Total Orders
+Total Orders =
+DISTINCTCOUNT(Fact_table[Order Id])
+
+// Total Profit
+Total Profit =
+SUM(Fact_table[Order Profit Per Order])
+
+// Total Quantity Sold
+Total Quantity =
+SUM(Fact_table[Order Item Quantity])
+
+// Average Sales Per Order
+Average Order Value =
+DIVIDE([Total Sales], [Total Orders])
+
+// Total Customers
+Total Customers =
+DISTINCTCOUNT(Fact_table[Customer Id])
+
+// Sales Per Customer
+Sales Per Customer =
+DIVIDE([Total Sales], [Total Customers])
+
+// Total Products Sold
+Total Products =
+DISTINCTCOUNT(Fact_table[Product Card Id])
+
+// Average Profit Per Order
+Average Profit =
+DIVIDE([Total Profit], [Total Orders])
+
+// Total Discount
+Total Discount =
+SUM(Fact_table[Order Item Discount])
+
+// Average Discount
+Average Discount =
+AVERAGE(Fact_table[Order Item Discount Rate])
+
+// Previous Year Sales
+Sales Previous Year =
+CALCULATE(
+    [Total Sales],
+    SAMEPERIODLASTYEAR(Dim_Date[Date])
+)
+
+// Sales Growth %
+Sales Growth % =
+DIVIDE(
+    [Total Sales] - [Sales Previous Year],
+    [Sales Previous Year]
+)
