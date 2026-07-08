@@ -1,0 +1,21 @@
+// ======================================================
+// Dim_Date Creation Script
+// Supply Chain Visibility & Optimization
+// ======================================================
+
+// Date table was created in Power BI using DAX.
+
+Dim_Date =
+CALENDAR (
+    MIN ( Fact_table[order date (DateOrders)] ),
+    MAX ( Fact_table[shipping date (DateOrders)] )
+)
+
+// Additional columns created:
+// - Year
+// - Month Number
+// - Month
+// - Quarter
+// - Week
+// - Day
+// - Day Name
