@@ -117,7 +117,6 @@ The following date attributes were added:
 Reusable business measures such as **Total Sales**, **Total Orders**, **Total Profit**, **Average Order Value**, **Sales Growth**, and customer-related calculations are documented in **DAX_Measures.txt**.
 
 ---
----
 
 # Skills Demonstrated
 
