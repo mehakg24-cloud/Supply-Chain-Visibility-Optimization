@@ -117,35 +117,6 @@ The following date attributes were added:
 Reusable business measures such as **Total Sales**, **Total Orders**, **Total Profit**, **Average Order Value**, **Sales Growth**, and customer-related calculations are documented in **DAX_Measures.txt**.
 
 ---
-
-# Repository Structure
-
-```text
-Milestone1/
-│
-├── data/
-│   └── .gitkeep
-│
-├── reference_star_schema_tables/
-│   ├── Dim_Category.csv
-│   ├── Dim_Customer.csv
-│   ├── Dim_Date.csv
-│   ├── Dim_Department.csv
-│   ├── Dim_Location.csv
-│   ├── Dim_Product.csv
-│   └── Dim_Shipping.csv
-│
-├── screenshots/
-│   └── Data_model.png
-│
-├── BuildGuide_Milestone1.md
-├── DAX_Measures.txt
-├── PowerQuery_DimDate_Script.txt
-├── PowerQuery_M_Script.txt
-├── README.md
-└── SupplyChain_Project.pbix
-```
-
 ---
 
 # Skills Demonstrated
