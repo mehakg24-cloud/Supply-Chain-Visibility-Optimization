@@ -154,7 +154,7 @@ Interactive visualizations were created to analyze delivery performance across r
 
 # Project Files
 
-- **Milestone2_PowerBI.pbix**
+- **Supply_Chain_Milestone_2.pbix**
 
 ---
 
