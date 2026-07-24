@@ -1,6 +1,6 @@
 # Supply Chain Visibility & Optimization – Milestone 2: Inventory Analytics & Delivery Performance
 
-*This milestone extends the Power BI solution developed in Milestone 1 by introducing two interactive dashboards focused on inventory performance and delivery efficiency. The dashboards leverage DAX measures, KPIs, and interactive visualizations to transform operational supply chain data into actionable business insights.*
+*This milestone extends the Power BI solution developed in Milestone 1 by introducing two interactive dashboards focused on inventory performance and delivery efficiency.*
 
 ---
 
