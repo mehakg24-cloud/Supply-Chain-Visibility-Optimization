@@ -162,7 +162,7 @@ These visualizations help identify shipping modes with higher transportation cos
 
 # Project Files
 
-- **Milestone3_PowerBI.pbix**
+- **Supply_Chain_Milestone_2.pbix**
 
 ---
 
